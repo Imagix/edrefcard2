@@ -2524,32 +2524,32 @@ hotasDetails = {
     },
     '231D012D::1': { # VKB STECS VC 2
         'displayName': 'VKB STECS VC 2',
-        'Joy_1': {'Type': 'Digital', 'x': 50, 'y': 388, 'width': 842, 'height': 56}, # Radio Down
-        'Joy_2': {'Type': 'Digital', 'x': 50, 'y': 466, 'width': 842, 'height': 56}, # Radio Up
-        'Joy_3': {'Type': 'Digital', 'x': 50, 'y': 544, 'width': 918, 'height': 56}, # A1
-        'Joy_4': {'Type': 'Digital', 'x': 50, 'y': 622, 'width': 918, 'height': 56}, # A2
-        'Joy_5': {'Type': 'Digital', 'x': 50, 'y': 700, 'width': 918, 'height': 56}, # C1
-        'Joy_6': {'Type': 'Digital', 'x': 50, 'y': 778, 'width': 918, 'height': 56}, # B1
-        'Joy_7': {'Type': 'Digital', 'x': 50, 'y': 856, 'width': 918, 'height': 56}, # B2
-        'Joy_8': {'Type': 'Digital', 'x': 50, 'y': 934, 'width': 918, 'height': 56}, # B3
-        'Joy_9': {'Type': 'Digital', 'x': 50, 'y': 1012, 'width': 918, 'height': 56}, # B4
-        'Joy_10': {'Type': 'Digital', 'x': 50, 'y': 1090, 'width': 918, 'height': 56}, # B5
-        'Joy_11': {'Type': 'Digital', 'x': 50, 'y': 1168, 'width': 918, 'height': 56}, # SW1 Up
-        'Joy_12': {'Type': 'Digital', 'x': 50, 'y': 1246, 'width': 918, 'height': 56}, # SW1 Button
-        'Joy_13': {'Type': 'Digital', 'x': 50, 'y': 1324, 'width': 918, 'height': 56}, # SW1 Down
-        'Joy_14': {'Type': 'Digital', 'x': 50, 'y': 1402, 'width': 918, 'height': 56}, # SW2 Up
-        'Joy_15': {'Type': 'Digital', 'x': 50, 'y': 1480, 'width': 918, 'height': 56}, # SW2 Button
-        'Joy_16': {'Type': 'Digital', 'x': 50, 'y': 1558, 'width': 918, 'height': 56}, # SW2 Down
-        'Joy_17': {'Type': 'Digital', 'x': 50, 'y': 1636, 'width': 918, 'height': 56}, # TGL UP
-        'Joy_18': {'Type': 'Digital', 'x': 50, 'y': 1714, 'width': 918, 'height': 56}, # TGL DOWN
-        'Joy_19': {'Type': 'Digital', 'x': 50, 'y': 1792, 'width': 918, 'height': 56}, # EN1 Left
-        'Joy_20': {'Type': 'Digital', 'x': 50, 'y': 1870, 'width': 918, 'height': 56}, # EN1 Right
-        'Joy_21': {'Type': 'Digital', 'x': 50, 'y': 1948, 'width': 842, 'height': 56}, # EN2 Left
-        'Joy_22': {'Type': 'Digital', 'x': 50, 'y': 2026, 'width': 842, 'height': 56}, # EN2 Right
-        'Joy_23': {'Type': 'Digital', 'x': 50, 'y': 2104, 'width': 842, 'height': 56}, # EN1 Click
-        'Joy_24': {'Type': 'Digital', 'x': 50, 'y': 2182, 'width': 842, 'height': 56}, # EN2 Click
-        'Joy_25': {'Type': 'Digital', 'x': 50, 'y': 2260, 'width': 842, 'height': 56}, # 3-Position Switch Up
-        'Joy_26': {'Type': 'Digital', 'x': 50, 'y': 2338, 'width': 842, 'height': 56}, # 3-Position Switch Down
+        'Joy_1': {'Type': 'Digital', 'x': 2680, 'y': 405, 'width': 842, 'height': 56}, # Radio Down
+        'Joy_2': {'Type': 'Digital', 'x': 2680, 'y': 350, 'width': 842, 'height': 56}, # Radio Up
+        'Joy_3': {'Type': 'Digital', 'x': 1480, 'y': 1770, 'width': 918, 'height': 56}, # A1
+        'Joy_4': {'Type': 'Digital', 'x': 1620, 'y': 1554, 'width': 918, 'height': 56}, # A2
+        'Joy_5': {'Type': 'Digital', 'x': 1550, 'y': 1660, 'width': 918, 'height': 56}, # C1
+        'Joy_6': {'Type': 'Digital', 'x': 2080, 'y': 910, 'width': 918, 'height': 56}, # B1
+        'Joy_7': {'Type': 'Digital', 'x': 2080, 'y': 1015, 'width': 918, 'height': 56}, # B2
+        'Joy_8': {'Type': 'Digital', 'x': 2080, 'y': 1125, 'width': 918, 'height': 56}, # B3
+        'Joy_9': {'Type': 'Digital', 'x': 2080, 'y': 1240, 'width': 918, 'height': 56}, # B4
+        'Joy_10': {'Type': 'Digital', 'x': 2080, 'y': 1340, 'width': 918, 'height': 56}, # B5
+        'Joy_11': {'Type': 'Digital', 'x': 775, 'y': 300, 'width': 918, 'height': 56}, # SW1 Up
+        'Joy_12': {'Type': 'Digital', 'x': 775, 'y': 355, 'width': 918, 'height': 56}, # SW1 Button
+        'Joy_13': {'Type': 'Digital', 'x': 775, 'y': 410, 'width': 918, 'height': 56}, # SW1 Down
+        'Joy_14': {'Type': 'Digital', 'x': 1600, 'y': 300, 'width': 918, 'height': 56}, # SW2 Up
+        'Joy_15': {'Type': 'Digital', 'x': 1600, 'y': 355, 'width': 918, 'height': 56}, # SW2 Button
+        'Joy_16': {'Type': 'Digital', 'x': 1600, 'y': 410, 'width': 918, 'height': 56}, # SW2 Down
+        'Joy_17': {'Type': 'Digital', 'x': 300, 'y': 915, 'width': 918, 'height': 56}, # TGL UP
+        'Joy_18': {'Type': 'Digital', 'x': 300, 'y': 970, 'width': 918, 'height': 56}, # TGL DOWN
+        'Joy_19': {'Type': 'Digital', 'x': 420, 'y': 1680, 'width': 918, 'height': 56}, # EN1 Left
+        'Joy_20': {'Type': 'Digital', 'x': 420, 'y': 1740, 'width': 918, 'height': 56}, # EN1 Right
+        'Joy_21': {'Type': 'Digital', 'x': 940, 'y': 1890, 'width': 842, 'height': 56}, # EN2 Left
+        'Joy_22': {'Type': 'Digital', 'x': 940, 'y': 1950, 'width': 842, 'height': 56}, # EN2 Right
+        'Joy_23': {'Type': 'Digital', 'x': 420, 'y': 1795, 'width': 842, 'height': 56}, # EN1 Click
+        'Joy_24': {'Type': 'Digital', 'x': 940, 'y': 2005, 'width': 842, 'height': 56}, # EN2 Click
+        'Joy_25': {'Type': 'Digital', 'x': 300, 'y': 1180, 'width': 842, 'height': 56}, # 3-Position Switch Up
+        'Joy_26': {'Type': 'Digital', 'x': 300, 'y': 1235, 'width': 842, 'height': 56}, # 3-Position Switch Down
     },
 }
 
