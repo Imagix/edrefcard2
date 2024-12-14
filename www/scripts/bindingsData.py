@@ -63,8 +63,7 @@ supportedDevices = OrderedDict([
     ('VKB-Gladiator-NXT-Premium-Left', {'Template': 'vkb-gladiator-nxt-premium-left', 'HandledDevices': ['231D0201']}),
     ('VKB-Gladiator-NXT-Premium-Right-OTA', {'Template': 'vkb-gladiator-nxt-premium-right-ota', 'HandledDevices': ['231D3200']}),
     ('VKB-Gladiator-NXT-Premium-Left-OTA', {'Template': 'vkb-gladiator-nxt-premium-left-ota', 'HandledDevices': ['231D3201']}),
-    ('VKB-STECS-VC1', {'Template': 'vkb-stecs-1', 'HandledDevices': ['231D012D::0']}),
-    ('VKB-STECS-VC2', {'Template': 'vkb-stecs-2', 'HandledDevices': ['231D012D::1']}),
+    ('VKB-STECS-Standard', {'Template': 'vkb-stecs-standard', 'HandledDevices': ['231D012D']}),
     ('Keyboard', {'Template': 'keyboard', 'HandledDevices': ['Keyboard']})
 ])
 
@@ -3356,8 +3355,8 @@ hotasDetails = {
         'Joy_POV1Down': {'Type': 'Digital', 'x': 2616, 'y': 730, 'width': 918, 'height': 56}, # A1 POV Switch down
         'Joy_POV1Left': {'Type': 'Digital', 'x': 2616, 'y': 796, 'width': 918, 'height': 56}, # A1 POV Switch left
     },
-    '231D012D::0': { # VKB STECS VC 1
-        'displayName': 'VKB STECS VC 1',
+    '231D012D': { # VKB STECS Standard
+        'displayName': 'VKB STECS Standard',
         'Joy_1': {'Type': 'Digital', 'x': 130, 'y': 280, 'width': 842, 'height': 56}, # White Button
         'Joy_2': {'Type': 'Digital', 'x': 130, 'y': 795, 'width': 842, 'height': 56}, # Red Button
         'Joy_3': {'Type': 'Digital', 'x': 130, 'y': 415, 'width': 918, 'height': 56}, # White Dial 1
@@ -3390,40 +3389,37 @@ hotasDetails = {
         'Joy_30': {'Type': 'Digital', 'x': 1160, 'y': 1455, 'width': 902, 'height': 56}, # MB1 Hat Right
         'Joy_31': {'Type': 'Digital', 'x': 1160, 'y': 1515, 'width': 902, 'height': 56}, # MB1 Hat Down
         'Joy_32': {'Type': 'Digital', 'x': 1160, 'y': 1395, 'width': 902, 'height': 56}, # MB1 Hat Up
-        'Joy_XAxis': {'Type': 'Analogue', 'x': 50, 'y': 2884, 'width': 758, 'height': 56}, # Right Throttle
-        'Joy_YAxis': {'Type': 'Analogue', 'x': 50, 'y': 2962, 'width': 758, 'height': 56}, # Left Throttle
-        'Joy_ZAxis': {'Type': 'Analogue', 'x': 50, 'y': 3040, 'width': 758, 'height': 56}, # Right Dial
-        'Joy_RXAxis': {'Type': 'Analogue', 'x': 50, 'y': 3118, 'width': 758, 'height': 56}, # Right Ministick R x
-        'Joy_RYAxis': {'Type': 'Analogue', 'x': 50, 'y': 3196, 'width': 758, 'height': 56}, # Right Ministick R y
-    },
-    '231D012D::1': { # VKB STECS VC 2
-        'displayName': 'VKB STECS VC 2',
-        'Joy_1': {'Type': 'Digital', 'x': 2680, 'y': 405, 'width': 842, 'height': 56}, # Radio Down
-        'Joy_2': {'Type': 'Digital', 'x': 2680, 'y': 350, 'width': 842, 'height': 56}, # Radio Up
-        'Joy_3': {'Type': 'Digital', 'x': 1480, 'y': 1770, 'width': 918, 'height': 56}, # A1
-        'Joy_4': {'Type': 'Digital', 'x': 1620, 'y': 1554, 'width': 918, 'height': 56}, # A2
-        'Joy_5': {'Type': 'Digital', 'x': 1550, 'y': 1660, 'width': 918, 'height': 56}, # C1
-        'Joy_6': {'Type': 'Digital', 'x': 2080, 'y': 910, 'width': 918, 'height': 56}, # B1
-        'Joy_7': {'Type': 'Digital', 'x': 2080, 'y': 1015, 'width': 918, 'height': 56}, # B2
-        'Joy_8': {'Type': 'Digital', 'x': 2080, 'y': 1125, 'width': 918, 'height': 56}, # B3
-        'Joy_9': {'Type': 'Digital', 'x': 2080, 'y': 1240, 'width': 918, 'height': 56}, # B4
-        'Joy_10': {'Type': 'Digital', 'x': 2080, 'y': 1340, 'width': 918, 'height': 56}, # B5
-        'Joy_11': {'Type': 'Digital', 'x': 775, 'y': 300, 'width': 918, 'height': 56}, # SW1 Up
-        'Joy_12': {'Type': 'Digital', 'x': 775, 'y': 355, 'width': 918, 'height': 56}, # SW1 Button
-        'Joy_13': {'Type': 'Digital', 'x': 775, 'y': 410, 'width': 918, 'height': 56}, # SW1 Down
-        'Joy_14': {'Type': 'Digital', 'x': 1600, 'y': 300, 'width': 918, 'height': 56}, # SW2 Up
-        'Joy_15': {'Type': 'Digital', 'x': 1600, 'y': 355, 'width': 918, 'height': 56}, # SW2 Button
-        'Joy_16': {'Type': 'Digital', 'x': 1600, 'y': 410, 'width': 918, 'height': 56}, # SW2 Down
-        'Joy_17': {'Type': 'Digital', 'x': 300, 'y': 915, 'width': 918, 'height': 56}, # TGL UP
-        'Joy_18': {'Type': 'Digital', 'x': 300, 'y': 970, 'width': 918, 'height': 56}, # TGL DOWN
-        'Joy_19': {'Type': 'Digital', 'x': 420, 'y': 1680, 'width': 918, 'height': 56}, # EN1 Left
-        'Joy_20': {'Type': 'Digital', 'x': 420, 'y': 1740, 'width': 918, 'height': 56}, # EN1 Right
-        'Joy_21': {'Type': 'Digital', 'x': 940, 'y': 1890, 'width': 842, 'height': 56}, # EN2 Left
-        'Joy_22': {'Type': 'Digital', 'x': 940, 'y': 1950, 'width': 842, 'height': 56}, # EN2 Right
-        'Joy_23': {'Type': 'Digital', 'x': 420, 'y': 1795, 'width': 842, 'height': 56}, # EN1 Click
-        'Joy_24': {'Type': 'Digital', 'x': 940, 'y': 2005, 'width': 842, 'height': 56}, # EN2 Click
-        'Joy_25': {'Type': 'Digital', 'x': 300, 'y': 1180, 'width': 842, 'height': 56}, # 3-Position Switch Up
-        'Joy_26': {'Type': 'Digital', 'x': 300, 'y': 1235, 'width': 842, 'height': 56}, # 3-Position Switch Down
+        'Joy_33': {'Type': 'Digital', 'x': 2570, 'y': 1970, 'width': 842, 'height': 56}, # Radio Down
+        'Joy_34': {'Type': 'Digital', 'x': 2570, 'y': 2025, 'width': 842, 'height': 56}, # Radio Up
+        'Joy_35': {'Type': 'Digital', 'x': 1370, 'y': 3390, 'width': 918, 'height': 56}, # A1
+        'Joy_36': {'Type': 'Digital', 'x': 1510, 'y': 3170, 'width': 918, 'height': 56}, # A2
+        'Joy_37': {'Type': 'Digital', 'x': 1445, 'y': 3280, 'width': 918, 'height': 56}, # C1
+        'Joy_38': {'Type': 'Digital', 'x': 1975, 'y': 2525, 'width': 918, 'height': 56}, # B1
+        'Joy_39': {'Type': 'Digital', 'x': 1975, 'y': 2635, 'width': 918, 'height': 56}, # B2
+        'Joy_40': {'Type': 'Digital', 'x': 1975, 'y': 2745, 'width': 918, 'height': 56}, # B3
+        'Joy_41': {'Type': 'Digital', 'x': 1975, 'y': 2855, 'width': 918, 'height': 56}, # B4
+        'Joy_42': {'Type': 'Digital', 'x': 1975, 'y': 2965, 'width': 918, 'height': 56}, # B5
+        'Joy_43': {'Type': 'Digital', 'x': 670, 'y': 1915, 'width': 918, 'height': 56}, # SW1 Up
+        'Joy_44': {'Type': 'Digital', 'x': 670, 'y': 1970, 'width': 918, 'height': 56}, # SW1 Button
+        'Joy_45': {'Type': 'Digital', 'x': 670, 'y': 2025, 'width': 918, 'height': 56}, # SW1 Down
+        'Joy_46': {'Type': 'Digital', 'x': 1490, 'y': 1915, 'width': 918, 'height': 56}, # SW2 Up  43
+        'Joy_47': {'Type': 'Digital', 'x': 1490, 'y': 1970, 'width': 918, 'height': 56}, # SW2 Button
+        'Joy_48': {'Type': 'Digital', 'x': 1490, 'y': 2025, 'width': 918, 'height': 56}, # SW2 Down 45
+        'Joy_49': {'Type': 'Digital', 'x': 50, 'y': 4636, 'width': 918, 'height': 56}, # TGL UP
+        'Joy_50': {'Type': 'Digital', 'x': 50, 'y': 4714, 'width': 918, 'height': 56}, # TGL DOWN
+        'Joy_51': {'Type': 'Digital', 'x': 50, 'y': 4792, 'width': 918, 'height': 56}, # EN1 Left
+        'Joy_52': {'Type': 'Digital', 'x': 50, 'y': 4870, 'width': 918, 'height': 56}, # EN1 Right
+        'Joy_53': {'Type': 'Digital', 'x': 50, 'y': 4948, 'width': 842, 'height': 56}, # EN2 Left
+        'Joy_54': {'Type': 'Digital', 'x': 50, 'y': 5026, 'width': 842, 'height': 56}, # EN2 Right
+        'Joy_55': {'Type': 'Digital', 'x': 50, 'y': 5104, 'width': 842, 'height': 56}, # EN1 Click
+        'Joy_56': {'Type': 'Digital', 'x': 50, 'y': 5182, 'width': 842, 'height': 56}, # EN2 Click
+        'Joy_57': {'Type': 'Digital', 'x': 50, 'y': 5260, 'width': 842, 'height': 56}, # 3-Position Switch Up
+        'Joy_58': {'Type': 'Digital', 'x': 50, 'y': 5338, 'width': 842, 'height': 56}, # 3-Position Switch Down
+        'Joy_XAxis': {'Type': 'Analogue', 'x': 50, 'y': 5884, 'width': 758, 'height': 56}, # Right Throttle
+        'Joy_YAxis': {'Type': 'Analogue', 'x': 50, 'y': 5962, 'width': 758, 'height': 56}, # Left Throttle
+        'Joy_ZAxis': {'Type': 'Analogue', 'x': 50, 'y': 6040, 'width': 758, 'height': 56}, # Right Dial
+        'Joy_RXAxis': {'Type': 'Analogue', 'x': 50, 'y': 6118, 'width': 758, 'height': 56}, # Right Ministick R x
+        'Joy_RYAxis': {'Type': 'Analogue', 'x': 50, 'y': 6196, 'width': 758, 'height': 56}, # Right Ministick R y
     },
 }
 
