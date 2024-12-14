@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-__version__ = '1.3'
+__version__ = '1.4'
 
 from lxml import etree
 
@@ -505,7 +505,7 @@ def createHOTASImage(physicalKeys, modifiers, source, imageDevices, biggestFontS
                             # Check if this is a digital control on an analogue stick with an analogue equivalent
                             if control.get('Type') == 'Digital' and control.get('HasAnalogue') is True and hotasDetail.get('Type') == 'Analogue':
                                 if misconfigurationWarnings == '':
-                                    misconfigurationWarnings = '<h1>Misconfiguration detected</h1>You have one or more analogue controls configured incorrectly. Please see <a href="https://forums.frontier.co.uk/showthread.php?t=209792">this thread</a> for details of the problem and how to correct it.<br/> <b>Your misconfigured controls:</b> <b>%s</b> ' % control['Name']
+                                    misconfigurationWarnings = '<h1>Misconfiguration detected</h1>You have one or more analogue controls configured incorrectly. Please see <a href="https://forums.frontier.co.uk/threads/627609/">this thread</a> for details of the problem and how to correct it.<br/> <b>Your misconfigured controls:</b> <b>%s</b> ' % control['Name']
                                 else:
                                     misconfigurationWarnings = '%s, <b>%s</b>' % (misconfigurationWarnings, control['Name'])
                                 #logError('%s: Digital command %s found on hotas control %s::%s\n' % (runId, control['Name'], itemDevice, itemKey))
@@ -869,7 +869,7 @@ def printBody(mode, options, config, public, createdImages, deviceForBlockImage,
     print('<p><a href="/">Home</a>.</p>')
 
 def printSupportPara():
-    supportPara = '<p>Version %s<br>Please direct questions, suggestions and support requests to <a href="https://forums.frontier.co.uk/threads/edrefcard-makes-a-printable-reference-card-of-your-controller-bindings.464400/">the thread on the official Elite: Dangerous forums</a>.</p>' % __version__
+    supportPara = '<p>Version %s<br>Please direct questions, suggestions and support requests to <a href="https://forums.frontier.co.uk/threads/627609/">the thread on the official Elite: Dangerous forums</a>.</p>' % __version__
     print(supportPara)
 
 def printHTML(mode, options, config, public, createdImages, deviceForBlockImage, errors):
@@ -918,6 +918,12 @@ def parseBindings(runId, xml, displayGroups, errors):
             vpcCM3Throttle32buttonmode = True
         else:
             vpcCM3Throttle32buttonmode = False
+
+    if len(tree.findall(".//*[@Device='33440197']")) > 0:
+        if len(tree.findall(".//*[@DeviceIndex='1']")) > 0:
+            vpcCM3Throttle32buttonmode = True
+        else:
+            vpcCM3Throttle32buttonmode = False
         
     xmlBindings = tree.findall(".//Binding") + tree.findall(".//Primary") + tree.findall(".//Secondary")
     for xmlBinding in xmlBindings:
@@ -943,6 +949,25 @@ def parseBindings(runId, xml, displayGroups, errors):
                 device = "VPC-MongoosT-50CM3-Throttle-32B0"
             if deviceIndex == "1":
                 device = "VPC-MongoosT-50CM3-Throttle-32B1"
+                deviceIndex = "0"
+            if deviceIndex == "2":
+                device = "VPC-MongoosT-50CM3-Throttle-32B2"
+                deviceIndex = "0"
+
+        # Rewrite the device if it's a VPC MongoosT-50CM3 Throttle running 32 button split mode with no mode shift
+        if device == "33448198":
+            if deviceIndex == "0":
+                device = "VPC-MongoosT-50CM3-Throttle-32B-NS0"
+            if deviceIndex == "1":
+                device = "VPC-MongoosT-50CM3-Throttle-32B-NS1"
+                deviceIndex = "0"
+
+	# CM3, unknown config
+        if device == "33440197" and vpcCM3Throttle32buttonmode == True:
+            if deviceIndex == "0":
+                device = "VPC-MongoosT-50CM3-Throttle-32B1"
+            if deviceIndex == "1":
+                device = "VPC-MongoosT-50CM3-Throttle-32B0"
                 deviceIndex = "0"
             if deviceIndex == "2":
                 device = "VPC-MongoosT-50CM3-Throttle-32B2"
